@@ -1,0 +1,48 @@
+<mvc:View xmlns:form="sap.ui.layout.form" controllerName="login.controller.LoginApp"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m"
+    xmlns:l="sap.ui.layout">
+    <Page id="page" title="{i18n>title}">
+        <content>
+            <FlexBox width="100%" id="box0" alignItems="Center" alignContent="Center" direction="Column" busyIndicatorSize="Small" fitContainer="true" justifyContent="Center">
+            <items><sap.ui.layout.form:Form editable="true" xmlns:sap.ui.layout.form="sap.ui.layout.form" id="form0">
+                    <sap.ui.layout.form:formContainers><sap.ui.layout.form:FormContainer title="Login" id="container0">
+                            <sap.ui.layout.form:formElements>
+                                <sap.ui.layout.form:FormElement label="Email" id="element0">
+                                    <sap.ui.layout.form:fields>
+                                        <Input id="inputEmail" type="Email"/>
+                                    </sap.ui.layout.form:fields>
+                                </sap.ui.layout.form:FormElement>
+                                <sap.ui.layout.form:FormElement label="Senha" id="element1">
+                                    <sap.ui.layout.form:fields>
+                                        <Input id="password" width="100%" type="Password"/>
+                                    </sap.ui.layout.form:fields>
+                                    <l:VerticalLayout class="sapUiContentPadding" ></l:VerticalLayout>
+                                    <Button text="Login" press="onLoginUser" width="80%"></Button>
+                                    <l:VerticalLayout class="sapUiContentPadding" ></l:VerticalLayout>
+                                    <Button text="Cadastrar" width="80%"></Button>
+                                </sap.ui.layout.form:FormElement>
+                            </sap.ui.layout.form:formElements>
+                        </sap.ui.layout.form:FormContainer>
+                    </sap.ui.layout.form:formContainers>
+                    <sap.ui.layout.form:layout>
+                        <sap.ui.layout.form:ResponsiveGridLayout id="layout0"/>
+                    </sap.ui.layout.form:layout></sap.ui.layout.form:Form>
+            </items>
+        </FlexBox>
+            <!--<form:SimpleForm id="LoginForm" editable="true" layout="ResponsiveGridLayout" adjustLabelSpan="true" labelSpanL="4" labelSpanM="4" labelSpanS="12" columnsL="1" columnsM="1" emptySpanL="4" emptySpanM="0">
+                <form:content>
+                    <Label text="Username" required="true"></Label>
+                    <Input id="inputEmail" type="Email"></Input>
+                    <Label text="Password" required="true"></Label>
+                    <Input 	id="password" type="Password"></Input>
+                </form:content>
+            </form:SimpleForm>-->
+        </content>
+        <footer>
+            <Bar design="Footer">
+               
+            </Bar>
+        </footer>
+    </Page>
+</mvc:View>

@@ -1,0 +1,7 @@
+<mvc:View xmlns:form="sap.ui.layout.form" controllerName="login.controller.Detail"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m">
+    <Page id="page" title="{i18n>Detailtitle}" showNavButton="true" navButtonPress="oNavButton_press">
+        <content/>
+    </Page>
+</mvc:View>
